@@ -1,0 +1,20 @@
+<form class="example-form">
+    <div style="text-align: center !important;">
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Value  1" type="number" #val1>
+        </mat-form-field>
+        <br>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Value  2" type="number" #val2>
+        </mat-form-field>
+    </div>
+    <div style="text-align: center !important;">
+        <button mat-raised-button color="primary" (click)="add(val1.value, val2.value)">Add</button>
+        <button mat-raised-button color="accent" (click)="sub(val1.value, val2.value)">Sub</button>
+        <button mat-raised-button style="background-color: yellow;" (click)="mul(val1.value, val2.value)">Mul</button>
+        <button mat-raised-button (click)="div(val1.value, val2.value)">Div</button>
+    </div>
+    <div style="text-align: center !important; padding: 1em; font-family: Roboto,'Helvetica Neue',sans-serif;">
+        <label>Ans: {{ resultData }}</label>
+    </div>
+</form>
