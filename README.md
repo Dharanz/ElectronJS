@@ -16,8 +16,8 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Running Electron JS
 
-Run npm run electron-build to run the app in desktop
+Run `npm run electron-build` to run the app in desktop
 
 ## Generae exe for windows
 
-Run electron-packager . --platform=win32 in the project directory. it will create an folder in the root directory. In that folder you can find <your-app-name>.exe file.
+Run `electron-packager . --platform=win32` in the project directory. it will create an folder in the root directory. In that folder you can find <your-app-name>.exe file.
